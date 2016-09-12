@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #00b33c;
+}
+
+a:hover {
+  text-shadow: 1px 1px 1px #000;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-around;
+}
+
+h1, h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/**************************************************************
+                        _nav.pug
+**************************************************************/
+
+.navbar {
+  background-color: #1a1a1a;
+  list-style-type: none;
+  height: 2em;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  display: -webkit-flex;
+  -webkit-justify-content: space-around;
+  -webkit-align-items: center;
+}
+
+.icons8-Bungalow {
+  margin-top: .25em;
+}
+
+/**************************************************************
+                        _header.pug
+**************************************************************/
+
+header {
+  background: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fth08.deviantart.net%2Ffs70%2FPRE%2Fi%2F2011%2F219%2Fc%2F8%2Fsad_dreamer___full_by_fear_sas-d45ryyd.jpg&f=1") no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  padding-left: 2em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+}
+
+/**************************************************************
+                        index.pug
+**************************************************************/
+
+#about {
+  background: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.inqmind.co%2Fcontent%2F2012%2F10%2Fdreamer-by-louis-lander-deacon%2Fdreamer-by-louis-lander-deacon_616.jpg&f=1") no-repeat center fixed;
+  background-size: cover;
+  text-shadow: 1px 1px 1em #eee;
+  padding: 1em 0 2em;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  display: -webkit-flex;
+  -webkit-align-items: center;
+}
+
+#contact {
+  background: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fpica.nipic.com%2F2008-03-13%2F2008313164815850_2.jpg&f=1") no-repeat center fixed;
+  background-size: cover;
+  height: 50vh;
+}
+
+.contactContainer {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-around;
+}
+
+/********************************
+      index.pug media queries
+*********************************/
+
+@media screen and (min-width: 400px) {
+  #about {
+    height: 80vh;
+  }
+  .container {
+    height: 90%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    height: 80%;
+  }
+  #contact {
+    display: flex;
+    align-items: center;
+
+    display: -webkit-flex;
+    -webkit-align-items: center;
+  }
+  .contactContainer {
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    height: 70%;
+  }
+  .contactContainer {
+    height: 60%;
+  }
+}
+
+/**************************************************************
+                        blog.pug
+**************************************************************/
+
+.blogBackground {
+  background: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Ffiles.vladstudio.com%2Fjoy%2Fdreamer2%2Fwall%2Fvladstudio_dreamer2_800x600.jpg&f=1") no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 2em;
+  color: #b3b3b3;
+
+  display: flex;
+  align-items: center;
+
+  display: -webkit-flex;
+  -webkit-align-items: center;
+}
+
+.entry {
+  text-shadow: 2px 2px 1em #000;
+  height: 25%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-around;
+}
+
+/**************************************************************
+                        _footer.pug
+**************************************************************/
+
+footer {
+  padding: 1em 0;
+  background-color: #1a1a1a;
+  color: #eee;
+}
+
+.footContainer {
+  width: 80%;
+  margin: auto;
+}

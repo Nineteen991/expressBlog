@@ -1,0 +1,14 @@
+{
+  "03": {
+    "title": "Lorem ipsum dolor sit amet",
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "02": {
+    "title": "Created another website",
+    "description": "I converted a website that I initally created using just html, css, and javascript to express.js. The initial website was a shop for some of the industrial furniture that I build and sell."
+  },
+  "01": {
+    "title": "Simple blog",
+    "description": "This is a simple blog site that I just created using express.js. Does not yet use a database, instead it is a .json file. Eventually I will covert this to use a mongodb."
+  }
+}

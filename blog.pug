@@ -1,0 +1,13 @@
+extends ./layout.pug
+
+block content
+
+  section.blogBackground
+    .container
+      each post in posts
+        .entry
+          h1.blogTitle #{post.title}
+          p.blogEntry #{post.description}
+
+      //<button type="button" onclick="document.getElementsByClassName('entry').innerHTML = #{post.description}"> read all about it
+      //button(type='button' onclick='document.getElementById('').innerHTML = p #{post.description}') read all about it
